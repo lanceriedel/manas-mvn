@@ -3,9 +3,11 @@
   <groupId>manas</groupId>
   <artifactId>manas</artifactId>
   <versioning>
+    <release>1.1</release>
     <versions>
       <version>1.0-SNAPSHOT</version>
+      <version>1.1</version>
     </versions>
-    <lastUpdated>20130805224934</lastUpdated>
+    <lastUpdated>20130805230148</lastUpdated>
   </versioning>
 </metadata>
