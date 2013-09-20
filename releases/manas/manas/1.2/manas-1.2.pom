@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>manas</groupId>
+    <artifactId>manas</artifactId>
+    <packaging>pom</packaging>
+    <version>1.2</version>
+    <properties>
+        <!-- github server corresponds to entry in ~/.m2/settings.xml -->
+        <github.global.server>github</github.global.server>
+
+        <internal.repo.path>file:///Users/lance/Projects/Hive/manas-mvn</internal.repo.path>
+
+    </properties>
+
+
+    <scm>
+        <url>https://github.com/lanceriedel/manas</url>
+        <connection>scm:git:git://github.com/lanceriedel/manas.git</connection>
+        <developerConnection>scm:git:git@github.com:lanceriedel/manas.git</developerConnection>
+      <tag>manas-1.2</tag>
+  </scm>
+
+
+    <modules>
+        <module>api</module>
+        <module>data</module>
+        <module>indexer</module>
+        <module>indexmanager</module>
+        <module>lex</module>
+        <module>utility</module>
+        <module>broker</module>
+        <module>coreclient</module>
+  </modules>
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.1</version>
+
+            </plugin>
+
+
+        </plugins>
+    </build>
+
+
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Internal Repository</name>
+            <url>${internal.repo.path}</url>
+        </repository>
+    </distributionManagement>
+
+
+
+</project>
