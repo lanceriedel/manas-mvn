@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>manas</groupId>
+  <artifactId>manas</artifactId>
+  <version>1.6.alti-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20131111.233139</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20131111233139</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.6.alti-20131111.233139-1</value>
+        <updated>20131111233139</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
